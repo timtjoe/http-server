@@ -1,5 +1,7 @@
-const { default: parser } = require('./src/parser');
-const lines = require('fs').readFileSync(0, 'utf8').split('\n');
+
+import fs from "node:fs";
+const lines = fs.readFileSync(0, "utf8").split("\n");
+import Parser from "./src/parser/index.js";
 
 // parser.request(lines);
-parser.headers(lines);
+Parser.headers(lines);

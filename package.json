@@ -1,0 +1,24 @@
+{
+  "name": "http-server",
+  "version": "1.0.0",
+  "description": "[![shipthatcode — Build Your Own HTTP Server](https://api.shipthatcode.com/cert/142d5e6314db5401236f949952d52f34.svg)](https://shipthatcode.com/courses/build-http-server)",
+  "main": "main.js",
+  "type": "module",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timtjoe/http-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timtjoe/http-server/issues"
+  },
+  "homepage": "https://github.com/timtjoe/http-server#readme"
+}
