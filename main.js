@@ -1,7 +1,9 @@
-
 import fs from "node:fs";
-const lines = fs.readFileSync(0, "utf8").split("\n");
-import Parser from "./src/parser/index.js";
+import router from "./src/router.js";
+const data = fs.readFileSync(0, "utf8").split("\n");
+// import Parser from "./src/parser/index.js";
 
 // parser.request(lines);
-Parser.headers(lines);
+// Parser.body(lines);
+const output = router.request(data);
+console.log(output.join("\n"));
