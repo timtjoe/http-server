@@ -40,14 +40,28 @@ router.request = (data) => {
     const key = method + " " + path;
 
     if (routes.has(key)) {
-      results.push("200", + routes.get(key));
+      results.push("200", +routes.get(key));
     } else if (allow.has(path)) {
       results.push("405");
     } else {
       results.push("404");
     }
   }
-  return results;
+  console.log(results.join("\n"));
+
+  // return results;
 };
+
+router.pqs = (path, qs) => {
+  const segments = path.split("/");
+  console.log(segments);
+
+  const params = new URLSearchParams(qs);
+  const results = [];
+  for (const [key, value] of params.entries()) {
+    results[key] = value;
+  }
+  console.log(results)
+}
 
 export default router;
